@@ -6,15 +6,15 @@
         <remote name="emmanuel"
            fetch="git://github.com/EmmanuelU/"/>
 
-	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-10.2" remote="DS" />
-	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-10.2" remote="DS" />
-	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-10.2" remote="DS" />
+	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="jellybean-4.3" remote="DS" />
+	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="jellybean-4.3" remote="DS" />
+	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="jellybean-4.3" remote="DS" />
 
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
 	  
-	<project path="manifest" name="local_manifests" revision="cm-10.2" remote="DS">
+	<project path="manifest" name="local_manifests" revision="jellybean-4.3" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
 	  
