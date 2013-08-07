@@ -5,6 +5,9 @@
            
         <remote name="emmanuel"
            fetch="git://github.com/EmmanuelU/"/>
+        
+        <remote name="githubby"
+           fetch="git://github.com/"/>
 
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="jellybean-4.3" remote="DS" />
 	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="jellybean-4.3" remote="DS" />
@@ -17,6 +20,11 @@
 	<project path="manifest" name="local_manifests" revision="jellybean-4.3" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
+	
+	
+	<remove-project name="platform/external/sepolicy" />
+	<project name="Evervolv/android_external_sepolicy" path="external/sepolicy" revision="jellybean-4.3" remote="githubby" />
+	
 	  
 	<remove-project name="android_frameworks_av" />
 	<project name="android_frameworks_av" path="frameworks/av" revision="jellybean-4.3" remote="DS" />
