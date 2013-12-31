@@ -15,10 +15,6 @@
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
-	<project path="manifest" name="local_manifests" revision="cm-11.0-ion" remote="DS">
-		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
-	</project>
-	
            
          <remove-project name="CyanogenMod/android_build" />
          <project path="build" name="android_build" revision="cm-11.0" remote="DS" >
@@ -27,9 +23,9 @@
 
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-11.0-ion" remote="DS" />
-	<project name="android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-11.0-ion" remote="DS" />
+	<project name="TeamSXL/android_device_htc_doubleshot" path="device/htc/doubleshot" revision="cm-11.0-ion" remote="githubby" />
 	<project name="android_vendor_htc_doubleshot" path="vendor/htc/doubleshot" revision="cm-11.0" remote="DS" />
-	<project name="wild_kernel_htc_msm8660" path="kernel/htc/doubleshot" revision="android-msm-doubleshot-3.0-ion" remote="emmanuel" />
+	<project name="TeamSXL/ds-kernel-3.4" path="kernel/htc/doubleshot" revision="master" remote="githubby" />
 	
 	<remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
 	<project name="android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="cm-11.0" remote="DS" />
