@@ -19,7 +19,6 @@
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
 	
-           
          <remove-project name="CyanogenMod/android_build" />
          <project path="build" name="android_build" revision="cm-11.0" remote="DS" >
 	    <copyfile src="core/root.mk" dest="Makefile" />
