@@ -9,20 +9,12 @@
         <remote name="githubby"
            fetch="git://github.com/"/>
            
-        <remote name="Evervolv"
-           fetch="git://github.com/Evervolv/"/>
-           
 	<project path="buildbot" name="James_Buildbot" revision="master" remote="emmanuel">
 		<copyfile src="James" dest="James" />
 	</project>
 	<project path="manifest" name="local_manifests" revision="cm-11.0-ion" remote="DS">
 		<copyfile src="manifest.xml" dest=".repo/local_manifests/manifest.xml" />
 	</project>
-	
-         <remove-project name="CyanogenMod/android_build" />
-         <project path="build" name="android_build" revision="cm-11.0" remote="DS" >
-	    <copyfile src="core/root.mk" dest="Makefile" />
-	  </project>
 
 	<project name="android_device_htc_common" path="device/htc/common" revision="gingerbread" remote="DS" />
 	<project name="android_device_htc_msm8660-common" path="device/htc/msm8660-common" revision="cm-11.0-ion" remote="DS" />
@@ -36,7 +28,5 @@
 	<project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-11.0-ion" remote="DS" />
 	
 	<project name="android_frameworks_native" path="frameworks/native" revision="cm-11.0" remote="DS" />
-	<remove-project name="CyanogenMod/android_frameworks_av" />
-	<project name="android_frameworks_av" path="frameworks/av" revision="cm-11.0" remote="DS" />
 
 </manifest>
